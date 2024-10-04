@@ -10,7 +10,7 @@ void main ()
       secondLastName: "Rodriguez",
       gender:"Hombre",
       bloodGroup:"O+",
-      curp: "PERJ920805",
+      curp: "PERJ920805HDFXXX",
       birthdate: DateTime(1992,08,05),
       isActive: true,
       createdAt: DateTime(2024,09,2024,11,05,15)
@@ -105,7 +105,7 @@ class Person
     Grupo Sanguineo: $bloodGroup
     Fecha de Nacimiento: $formatBirthDate
     CURP:$curp
-    Activo:$isActive
+    Activo:$status
     Fecha de Registro: $formatCreatedDate
     ---------------------------------------------
     """;
