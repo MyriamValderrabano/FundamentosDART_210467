@@ -1,6 +1,4 @@
 void main() {
-  // Lista para almacenar datos
-  final List<Paciente> pacientesDatos = [];
 
   // Caso 1: Registrar un nuevo paciente
   print("Caso 1: Nuevo paciente que se registra hoy\n");
@@ -24,7 +22,6 @@ void main() {
   );
 
   // Agrega el paciente a la lista muestra los datos
-  pacientesDatos.add(myriamCortes);
   print(myriamCortes);
 
   // Actualiza el estatus de vida del paciente a "Fallecido".
@@ -53,7 +50,6 @@ void main() {
   );
 
   // Agrega y muestra los datos de Mariana.
-  pacientesDatos.add(marianaValderrabano);
   print(marianaValderrabano); 
 
   // Caso 3: Registrar a un paciente que acaba de fallecer.
@@ -78,21 +74,13 @@ void main() {
   );
 
   // Actualiza el estatus de vida a "Fallecido" y registra la defunción.
-  pacientesDatos.add(victorHernandez);
   victorHernandez.registroDefuncion(
     motivo: "Muerte natural", 
     hora: DateTime.now(),
   );
   print(victorHernandez); 
 
-  // Elimina al paciente de la "base de datos".
-  print("\nEliminando a Victor Hernández de la base de datos...\n");
-  pacientesDatos.removeWhere((paciente) => paciente.id == victorHernandez.id);
-  print("Paciente con ID ${victorHernandez.id} eliminado.");
-
-  // Muestra la lista de pacientes restantes en la base de datos.
-  print("Listado de pacientes restantes:");
-  pacientesDatos.forEach(print); 
+ 
 }
 
 // Definiciones de enumeraciones para estados de vida, tipos de seguro, grupos sanguíneos y géneros.
