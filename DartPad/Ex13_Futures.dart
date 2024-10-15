@@ -29,3 +29,5 @@ Future<String> httpGet( String url ){
   });
   
 }
+
+//ASINCRONO:  ES la capacidad de realizar múltiples tareas al mismo tiempo sin que una tarea tenga que esperar a que otra termine
